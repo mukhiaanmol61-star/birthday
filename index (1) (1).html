@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For My Love 🤎</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- FLOATING DECORATIONS -->
+  <div class="floating-hearts" aria-hidden="true">
+    <span>♡</span><span>♥</span><span>♡</span><span>✦</span><span>♡</span>
+  </div>
+
+  <!-- OPENING ENVELOPE -->
+  <section id="intro" class="screen intro">
+    <div class="intro-card">
+
+      <div class="envelope-wrap">
+        <div class="envelope" id="envelope">
+          <div class="envelope-heart">🤎</div>
+        </div>
+      </div>
+
+      <p class="eyebrow">A little gift made with love</p>
+
+      <h1>For My<br>Beautiful Girl</h1>
+
+      <p class="intro-message">
+        I made a little corner of the world just for you.
+        Filled with our memories, my wishes, and all the words
+        my heart wants to say.
+      </p>
+
+      <button id="revealBtn" class="gold-button">
+        Open Your Little Gift 💌
+      </button>
+
+      <p class="tiny-note">Made especially for you, with all my heart.</p>
+    </div>
+  </section>
+
+  <!-- SCRAPBOOK HOME -->
+  <main id="birthday" class="screen home hidden">
+
+    <header class="home-header">
+      <div class="mini-heart">♡</div>
+      <p class="eyebrow">A little world made just for you</p>
+      <h1>Happy Birthday</h1>
+      <h2>My Love 🤎</h2>
+
+      <p class="home-wish">
+        I made these little gifts for you.
+        Open them one by one, and take your time.
+      </p>
+
+      <div class="decorative-line">✦ ── ♡ ── ✦</div>
+    </header>
+
+    <div class="chapter-menu">
+
+      <button class="chapter-button" data-chapter="birthday-wishes">
+        <span class="chapter-icon">🎂</span>
+        <span class="chapter-text">
+          <strong>A Birthday Wish</strong>
+          <small>Open a wish made just for you</small>
+        </span>
+        <span class="chapter-arrow">♡</span>
+      </button>
+
+      <button class="chapter-button" data-chapter="memories">
+        <span class="chapter-icon">📷</span>
+        <span class="chapter-text">
+          <strong>Our Little Scrapbook</strong>
+          <small>Three memories, a million feelings</small>
+        </span>
+        <span class="chapter-arrow">♡</span>
+      </button>
+
+      <button class="chapter-button" data-chapter="reasons">
+        <span class="chapter-icon">🧸</span>
+        <span class="chapter-text">
+          <strong>Reasons I Love You</strong>
+          <small>Tap the little hearts to discover them</small>
+        </span>
+        <span class="chapter-arrow">♡</span>
+      </button>
+
+      <button class="chapter-button" data-chapter="hard-days">
+        <span class="chapter-icon">🫂</span>
+        <span class="chapter-text">
+          <strong>For Your Difficult Days</strong>
+          <small>A little hug from me to you</small>
+        </span>
+        <span class="chapter-arrow">♡</span>
+      </button>
+
+      <button class="chapter-button" data-chapter="wishes">
+        <span class="chapter-icon">🌷</span>
+        <span class="chapter-text">
+          <strong>My Wishes for Your Life</strong>
+          <small>Health, healing, happiness & prosperity</small>
+        </span>
+        <span class="chapter-arrow">♡</span>
+      </button>
+
+      <button class="chapter-button" data-chapter="letter">
+        <span class="chapter-icon">💌</span>
+        <span class="chapter-text">
+          <strong>A Letter From My Heart</strong>
+          <small>A letter you can keep forever</small>
+        </span>
+        <span class="chapter-arrow">♡</span>
+      </button>
+
+      <button class="chapter-button" data-chapter="promises">
+        <span class="chapter-icon">🕯️</span>
+        <span class="chapter-text">
+          <strong>My Promises to You</strong>
+          <small>Little promises, big love</small>
+        </span>
+        <span class="chapter-arrow">♡</span>
+      </button>
+
+      <button class="chapter-button" data-chapter="forever">
+        <span class="chapter-icon">♾️</span>
+        <span class="chapter-text">
+          <strong>My Forever</strong>
+          <small>One thing I will always mean</small>
+        </span>
+        <span class="chapter-arrow">♡</span>
+      </button>
+
+      <button class="chapter-button final-chapter" data-chapter="last-surprise">
+        <span class="chapter-icon">🎁</span>
+        <span class="chapter-text">
+          <strong>One Last Surprise</strong>
+          <small>Save this little gift for last</small>
+        </span>
+        <span class="chapter-arrow">♡</span>
+      </button>
+
+    </div>
+
+    <footer class="home-footer">
+      <p>Made with love, for my favourite person.</p>
+      <span>23 July 2024 · Our story ♡</span>
+    </footer>
+  </main>
+
+  <!-- SCRAPBOOK CHAPTERS -->
+  <section id="chapterModal" class="chapter-modal hidden">
+
+    <div class="chapter-window">
+
+      <header class="chapter-top">
+        <button id="closeChapter" class="close-button">
+          ← Back to our scrapbook
+        </button>
+        <span class="chapter-top-heart">♡</span>
+      </header>
+
+      <!-- BIRTHDAY WISHES -->
+      <article class="chapter-content hidden" id="birthday-wishes">
+        <div class="chapter-paper">
+          <p class="eyebrow">A little wish for you · 🎂</p>
+          <h2>A Birthday Wish</h2>
+
+          <div class="chapter-body">
+            <p>
+              Happy birthday to the most beautiful soul in my life.
+              Today is your day, and if I could, I would gather every
+              beautiful thing in this world and place it right in your hands.
+            </p>
+
+            <p>
+              I wish your mornings begin with peace, your days are filled
+              with reasons to smile, and your nights end with a heart that
+              feels safe, loved and grateful.
+            </p>
+
+            <p>
+              I hope this new year of your life brings you opportunities
+              you never imagined, dreams that slowly become reality,
+              unexpected happiness, gentle moments and memories
+              that make you smile even years later.
+            </p>
+
+            <p>
+              I wish you a life where you never have to question your worth,
+              where you are surrounded by people who genuinely care,
+              and where you always have the freedom to dream bigger.
+            </p>
+
+            <p>
+              You deserve happiness that isn't temporary.
+              You deserve peace that stays.
+              You deserve love that feels safe.
+              You deserve a future that makes you excited to wake up.
+            </p>
+
+            <p class="signature">Happy birthday, my love. 🤎</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- MEMORIES -->
+      <article class="chapter-content hidden" id="memories">
+        <div class="chapter-paper">
+          <p class="eyebrow">Little pieces of us · 📷</p>
+          <h2>Our Little Scrapbook</h2>
+
+          <p class="chapter-intro">
+            Some moments may seem ordinary to the world,
+            but to me, they are little pieces of happiness
+            that I wish I could keep forever.
+          </p>
+
+          <div class="memory-gallery">
+
+            <div class="memory-card">
+              <div class="polaroid">
+                <img
+                  src="https://i.ibb.co/hRGJgywY/IMG-20260814-WA0011.jpg"
+                  alt="Our first memory"
+                >
+                <p>♡ A little piece of us ♡</p>
+              </div>
+              <h3>Our First Memory 📷</h3>
+              <p>
+                A little moment that became a part of our story.
+                I love that we have memories that belong only to us.
+              </p>
+            </div>
+
+            <div class="memory-card">
+              <div class="polaroid">
+                <img
+                  src="https://i.ibb.co/ksQTTn13/IMG-20260919-WA0034.jpg"
+                  alt="My favourite person"
+                >
+                <p>♡ My favourite person ♡</p>
+              </div>
+              <h3>My Favourite Person 🤎</h3>
+              <p>
+                The person I can think about in the middle of an ordinary day
+                and suddenly find myself smiling.
+              </p>
+            </div>
+
+            <div class="memory-card">
+              <div class="polaroid">
+                <img
+                  src="https://i.ibb.co/jk87CmNF/IMG-20261112-WA0002.jpg"
+                  alt="Us, always"
+                >
+                <p>♡ Always us ♡</p>
+              </div>
+              <h3>Us, Always ♾️</h3>
+              <p>
+                One photograph, one moment, but so many feelings
+                that I could never fit into a caption.
+              </p>
+            </div>
+
+          </div>
+
+          <p class="chapter-ending">
+            I hope we create hundreds more memories together. 🤎
+          </p>
+        </div>
+      </article>
+
+      <!-- INTERACTIVE REASONS -->
+      <article class="chapter-content hidden" id="reasons">
+        <div class="chapter-paper">
+          <p class="eyebrow">Tiny love notes · ♡</p>
+          <h2>Reasons I Love You</h2>
+
+          <p class="chapter-intro">
+            There are so many reasons. Here are a few little ones.
+            Tap each heart to open a love note. 💌
+          </p>
+
+          <div class="heart-reveals">
+
+            <button class="heart-reveal" data-reveal>
+              <span class="reveal-heart">♡</span>
+              <span class="reveal-label">Open me</span>
+              <span class="reveal-message hidden">
+                I love your smile, especially the ones that happen
+                when you forget anyone is watching. 🤎
+              </span>
+            </button>
+
+            <button class="heart-reveal" data-reveal>
+              <span class="reveal-heart">♡</span>
+              <span class="reveal-label">Open me</span>
+              <span class="reveal-message hidden">
+                I love the way you care, and the beautiful heart
+                you carry even when life isn't easy. 🌷
+              </span>
+            </button>
+
+            <button class="heart-reveal" data-reveal>
+              <span class="reveal-heart">♡</span>
+              <span class="reveal-label">Open me</span>
+              <span class="reveal-message hidden">
+                I love your voice, your little habits, your expressions,
+                your silly moments and your serious moments. 🧸
+              </span>
+            </button>
+
+            <button class="heart-reveal" data-reveal>
+              <span class="reveal-heart">♡</span>
+              <span class="reveal-label">Open me</span>
+              <span class="reveal-message hidden">
+                Even the smallest conversations with you
+                can become the best part of my day. ✨
+              </span>
+            </button>
+
+            <button class="heart-reveal" data-reveal>
+              <span class="reveal-heart">♡</span>
+              <span class="reveal-label">Open me</span>
+              <span class="reveal-message hidden">
+                I never needed perfection. I wanted you.
+                The real you, exactly as you are. 🤎
+              </span>
+            </button>
+
+            <button class="heart-reveal" data-reveal>
+              <span class="reveal-heart">♡</span>
+              <span class="reveal-label">Open me</span>
+              <span class="reveal-message hidden">
+                I could keep discovering new reasons to love you
+                for the rest of my life. ♾️
+              </span>
+            </button>
+
+          </div>
+
+          <p class="signature">I love you for being you. 🤎</p>
+        </div>
+      </article>
+
+      <!-- DIFFICULT DAYS -->
+      <article class="chapter-content hidden" id="hard-days">
+        <div class="chapter-paper">
+          <p class="eyebrow">A warm hug from me · 🫂</p>
+          <h2>For Your Difficult Days</h2>
+
+          <div class="chapter-body">
+            <p>
+              My love, I know there are days when you are tired in ways
+              that sleep cannot completely fix. Days when things feel unfair,
+              when you worry about tomorrow, or when you wish life could
+              simply be a little easier.
+            </p>
+
+            <p>
+              On those days, please remember that you don't have to pretend
+              to be okay for me. You don't have to smile just to reassure me.
+              You don't have to hide your fears or your tears.
+            </p>
+
+            <p>
+              You are allowed to rest. You are allowed to feel.
+              You are allowed to have difficult days without feeling guilty.
+            </p>
+
+            <p>
+              I may not always know the perfect words.
+              I may not be able to solve every problem.
+              But I want to listen, understand, support you
+              and remind you that you are not defined by what you are going through.
+            </p>
+
+            <p>
+              I see your courage, but I also want you to know
+              that you don't have to be brave every minute.
+              You can lean on me too.
+            </p>
+
+            <p>
+              I hope life becomes gentler with you.
+              I hope better days find you.
+              And until they do, I hope you always remember
+              how deeply you are loved.
+            </p>
+
+            <p class="signature">I am here, beside you. 🫂</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- HEALTH AND PROSPERITY -->
+      <article class="chapter-content hidden" id="wishes">
+        <div class="chapter-paper">
+          <p class="eyebrow">Everything good for you · 🌷</p>
+          <h2>My Wishes for Your Life</h2>
+
+          <div class="chapter-body">
+            <p>
+              More than anything, I wish you the very best of health.
+              I wish for healing, strength, comfort, good days,
+              and every possible blessing that helps you feel better.
+            </p>
+
+            <p>
+              I pray and hope that your life is filled with prosperity,
+              abundance, financial security, opportunities
+              and the freedom to fulfil every dream you carry in your heart.
+            </p>
+
+            <p>
+              I wish you peace of mind.
+              I wish you happiness that comes naturally.
+              I wish you beautiful friendships, loving family moments,
+              success in whatever you choose, and a future full of possibilities.
+            </p>
+
+            <p>
+              I hope you travel to beautiful places,
+              see things that leave you speechless,
+              experience little adventures and collect memories
+              that make your heart feel full.
+            </p>
+
+            <p>
+              I wish for you to wake up one day and realise
+              that life has given you so many beautiful reasons
+              to smile, and that the things you once prayed for
+              have slowly found their way to you.
+            </p>
+
+            <p>
+              May your life be blessed with health, prosperity,
+              love, peace, success and endless happiness.
+            </p>
+
+            <p class="signature">
+              You deserve a beautiful life, my love. 🌷
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- LETTER -->
+      <article class="chapter-content hidden" id="letter">
+        <div class="chapter-paper letter-paper">
+          <p class="eyebrow">Words from my heart · 💌</p>
+          <h2>A Letter From My Heart</h2>
+
+          <div class="chapter-body letter-body">
+            <p>My love,</p>
+
+            <p>
+              Sometimes I sit and think about how much you have become
+              a part of my life. It feels strange how a person can slowly
+              become so important that their happiness, their comfort,
+              their dreams and their little moments begin to matter
+              so deeply to you.
+            </p>
+
+            <p>You are that person for me.</p>
+
+            <p>
+              I know our life isn't a fairytale where everything is perfect.
+              We have our own worries, responsibilities, difficult moments
+              and things we wish we could change. But even in an imperfect life,
+              loving you is one of the things that feels right to me.
+            </p>
+
+            <p>
+              I want to be there for your happy moments.
+              I want to celebrate your achievements.
+              I want to hear about the little things that happened in your day.
+              I want to laugh with you about things that probably make no sense
+              to anyone else.
+            </p>
+
+            <p>
+              And when life becomes difficult, I want to be someone
+              you can talk to without fear of being judged.
+              Someone who listens. Someone who respects your feelings.
+              Someone who doesn't make you feel like a burden
+              for needing love or reassurance.
+            </p>
+
+            <p>
+              I want to keep learning how to love you better.
+              Not just through words, but through patience,
+              effort, understanding and the little things I do every day.
+            </p>
+
+            <p>
+              You matter to me more than I can properly explain.
+              I hope you never forget that, especially on days
+              when you don't feel your best.
+            </p>
+
+            <p>
+              Thank you for being a part of my life.
+              Thank you for the memories we already have.
+              Thank you for all the memories waiting for us.
+            </p>
+
+            <p>
+              Happy birthday, my beautiful girl.
+              I wish you everything good that this world can offer.
+            </p>
+
+            <p class="signature">
+              With all my love,<br>
+              Yours. 🤎
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROMISES -->
+      <article class="chapter-content hidden" id="promises">
+        <div class="chapter-paper">
+          <p class="eyebrow">Little promises · 🕯️</p>
+          <h2>My Promises to You</h2>
+
+          <div class="chapter-body">
+            <p>
+              I promise to keep trying to understand you,
+              even when we don't see things the same way.
+            </p>
+
+            <p>
+              I promise to respect your feelings,
+              and never make you feel that your emotions are unimportant.
+            </p>
+
+            <p>
+              I promise to celebrate your little victories
+              and remind you that every step forward matters.
+            </p>
+
+            <p>
+              I promise to keep making time for us,
+              to create memories, to laugh and to enjoy
+              the little things in life together.
+            </p>
+
+            <p>
+              I promise to keep working on myself,
+              because I want to grow into a better man
+              and a better partner.
+            </p>
+
+            <p>
+              I promise that when I say I love you,
+              I will keep trying to make those words mean something
+              through my actions.
+            </p>
+
+            <p class="signature">These are not just birthday words. 🤎</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- FOREVER -->
+      <article class="chapter-content hidden" id="forever">
+        <div class="chapter-paper">
+          <p class="eyebrow">Always and forever · ♾️</p>
+          <h2>My Forever</h2>
+
+          <div class="chapter-body">
+            <p>
+              If someone asked me what I want you to remember
+              from all of this, it would be something very simple.
+            </p>
+
+            <p>
+              
+              I want you to remember that you are loved.
+              Not only on your birthday, not only on the
+              good days, but on every ordinary day too.
+            </p>
+
+            <p>
+              I want to keep choosing you, keep growing with you,
+              keep making memories with you, and keep loving you
+              through every season of our lives.
+            </p>
+
+            <p>
+              I don't know what every tomorrow will look like,
+              but I know that I want to keep building beautiful
+              tomorrows with you.
+            </p>
+
+            <p>
+              I love you today. I will love you through tomorrow.
+              And I hope I get to tell you that for the rest of my life.
+            </p>
+
+            <p class="signature">
+              You are my favourite part of this story. ♾️🤎
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- LAST SURPRISE -->
+      <article class="chapter-content hidden" id="last-surprise">
+        <div class="chapter-paper">
+          <p class="eyebrow">One last little gift · 🎁</p>
+          <h2>One Last Surprise</h2>
+
+          <div class="chapter-body">
+            <p>
+              If you have opened every little chapter,
+              then you have reached the end of my scrapbook.
+              But not the end of my love for you.
+            </p>
+
+            <p>
+              These words, these pictures, these little pages
+              are only a tiny way of showing you how much
+              you mean to me.
+            </p>
+
+            <p>
+              I wish I could give you a lifetime of beautiful
+              days, perfect health, peace in your heart,
+              prosperity, endless happiness and every dream
+              you have ever whispered to yourself.
+            </p>
+
+            <p>
+              Whenever life feels heavy, come back here.
+              Read these words again. Remember that somewhere
+              in this world, there is someone who loves you,
+              believes in you, and wishes nothing but good
+              things for you.
+            </p>
+
+            <p>
+              Happy birthday, my beautiful girl.
+              Thank you for being you.
+              Thank you for being a part of my life.
+            </p>
+
+            <p>
+              I love you today, tomorrow, and forever.
+            </p>
+
+            <p class="signature">
+              Forever yours. 🤎
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- CHAPTER NAVIGATION -->
+      <footer class="chapter-navigation">
+        <button id="prevChapter" class="gold-button" type="button">
+          ← Previous
+        </button>
+
+        <span id="chapterCounter">1 / 9</span>
+
+        <button id="nextChapter" class="gold-button" type="button">
+          Next →
+        </button>
+      </footer>
+
+    </div>
+  </section>
+
+  <!-- LOAD JAVASCRIPT -->
+  <script src="script.js"></script>
+
+</body>
+</html>
+
+              
